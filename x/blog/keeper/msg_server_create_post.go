@@ -19,5 +19,5 @@ func (k msgServer) CreatePost(goCtx context.Context, msg *types.MsgCreatePost) (
 
 	id := k.AppendPost(ctx, post)
 
-	return &types.MsgCreatePostResponse{}, nil
+	return &types.MsgCreatePostResponse{Id: id}, nil
 }

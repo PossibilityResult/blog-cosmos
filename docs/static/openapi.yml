@@ -48504,6 +48504,10 @@ definitions:
       number of blocks
   username.blog.blog.MsgCreatePostResponse:
     type: object
+    properties:
+      id:
+        type: string
+        format: uint64
   username.blog.blog.Params:
     type: object
     description: Params defines the parameters for the module.
